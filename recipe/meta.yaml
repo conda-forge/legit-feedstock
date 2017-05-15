@@ -22,12 +22,11 @@ requirements:
     - setuptools
   run:
     - python
-    - clint >=0.4.1
-    - gitpython >=0.3.4
-    - six >=1.9.0
+    - clint
+    - gitpython
+    - six
 
 test:
-  # Some package might need a `test/commands` key to check CLI.
   imports:
     - {{ packagename }}
 
