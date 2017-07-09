@@ -1,6 +1,6 @@
 {% set packagename = 'legit' %}
-{% set version = "0.2.0" %}
-{% set md5 = "5df3cd402b0de8f0251a87904b5eb88c" %}
+{% set version = "0.4.1" %}
+{% set md5 = "3917e991e72004406bd51ed1881b71d1" %}
 
 package:
   name: {{ packagename }}
@@ -22,12 +22,11 @@ requirements:
     - setuptools
   run:
     - python
-    - clint >=0.4.1
-    - gitpython >=0.3.4
-    - six >=1.9.0
+    - clint
+    - gitpython
+    - six
 
 test:
-  # Some package might need a `test/commands` key to check CLI.
   imports:
     - {{ packagename }}
 
