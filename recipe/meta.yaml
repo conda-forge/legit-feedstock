@@ -46,7 +46,9 @@ test:
 about:
   home: https://github.com/kennethreitz/legit
   license: BSD-3
+  license_file: LICENSE
   summary: 'Git for Humans.'
+  dev_url: https://github.com/kennethreitz/legit
 
 extra:
   recipe-maintainers:
