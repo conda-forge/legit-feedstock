@@ -39,9 +39,10 @@ requirements:
 test:
   imports:
     - legit
-
+    
   commands:
     - legit --version
+    - legit --help
 
 about:
   home: https://github.com/kennethreitz/legit
