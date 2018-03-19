@@ -1,14 +1,14 @@
-{% set packagename = 'legit' %}
-{% set version = "1.0.0" %}
-{% set sha256 = "53a67ad7a7caefab7a6c28a76d7967022e2aee956993b1b074cc4d8c78cc1500" %}
+{% set name = "legit" %}
+{% set version = "1.0.1" %}
+{% set sha256 = "e71c2dd4139afc0e4b8c2d1b5ab1265ad930e2cc8e4d6badf92923cee4e5baff" %}
 
 package:
-  name: {{ packagename }}
+  name: {{ name }}
   version: {{ version }}
 
 source:
-  fn: {{ packagename }}-{{ version }}.tar.gz
-  url: https://pypi.org/packages/source/{{ pakcagename[0] }}/{{ packagename }}/{{ packagename }}-{{ version }}.tar.gz
+  fn: {{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
