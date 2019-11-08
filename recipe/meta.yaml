@@ -10,6 +10,7 @@ source:
 
 build:
   number: 0
+  noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
   entry_points:
     - legit = legit.cli:main
@@ -27,7 +28,7 @@ requirements:
 
 test:
   imports:
-    - {{ packagename }}
+    - legit
   commands:
     - mkdir test-git-repo
     - cd test-git-repo
