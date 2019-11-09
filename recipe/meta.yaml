@@ -37,7 +37,7 @@ test:
     # legit needs a remote or it exits with a non-zero status
     # so we just need to add a fake one
     - git remote add origin http://
-    - legit help
+    - legit -h
   requires:
     - git
 
