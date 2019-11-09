@@ -13,7 +13,7 @@ build:
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
   entry_points:
-    - legit = legit.cli:main
+    - legit = legit.cli:cli
 
 requirements:
   build:
