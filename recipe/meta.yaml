@@ -1,4 +1,4 @@
-{% set version = "1.1.0" %}
+{% set version = "1.2.0" %}
 
 package:
   name: legit
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/l/legit/legit-{{ version }}.tar.gz
-  sha256: 25bd3809d657c9b0bd45a6a230dc7f58a56e6e068159d471ffeadb0cf4677b4d
+  sha256: 2c78b97b5947d03d55160b36255dafd3c3f3b1994148519c09a5846db21af059
 
 build:
   number: 0
