@@ -1,4 +1,4 @@
-{% set version = "1.2.0" %}
+{% set version = "1.2.0.post0" %}
 
 package:
   name: legit
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/l/legit/legit-{{ version }}.tar.gz
-  sha256: 2c78b97b5947d03d55160b36255dafd3c3f3b1994148519c09a5846db21af059
+  sha256: 949396b68029a8af405ab20c901902341ef6bd55c7fec6dab71141d63d406b11
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - legit = legit.cli:cli
 
@@ -45,7 +45,7 @@ about:
   home: https://github.com/kennethreitz/legit
   license: BSD-3-Clause
   license_file: LICENSE
-  summary: 'Git for Humans'
+  summary: Git for Humans
 
 extra:
   recipe-maintainers:
