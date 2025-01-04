@@ -5,22 +5,22 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/l/legit/legit-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/l/legit/legit-{{ version }}.tar.gz
   sha256: 949396b68029a8af405ab20c901902341ef6bd55c7fec6dab71141d63d406b11
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - legit = legit.cli:cli
 
 requirements:
-  build:
-    - python
+  host:
+    - python {{ python_min }}
     - pip
   run:
-    - python
+    - python >={{ python_min }}
     - clint
     - click
     - crayons
@@ -40,6 +40,7 @@ test:
     - legit -h
   requires:
     - git
+    - python {{ python_min }}
 
 about:
   home: https://github.com/kennethreitz/legit
